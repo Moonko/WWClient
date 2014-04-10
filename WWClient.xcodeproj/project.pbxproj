@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF51767A18F6BC5A007BBF9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF51767918F6BC5A007BBF9C /* Cocoa.framework */; };
+		CF51767C18F6BC5A007BBF9C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF51767B18F6BC5A007BBF9C /* SpriteKit.framework */; };
+		CF51768618F6BC5A007BBF9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF51768418F6BC5A007BBF9C /* InfoPlist.strings */; };
+		CF51768818F6BC5A007BBF9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF51768718F6BC5A007BBF9C /* main.m */; };
+		CF51768C18F6BC5A007BBF9C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CF51768A18F6BC5A007BBF9C /* Credits.rtf */; };
+		CF51768E18F6BC5A007BBF9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF51768D18F6BC5A007BBF9C /* MainMenu.xib */; };
+		CF51769018F6BC5A007BBF9C /* MKMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CF51768F18F6BC5A007BBF9C /* MKMyScene.m */; };
+		CF51769318F6BC5A007BBF9C /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF51769218F6BC5A007BBF9C /* MKAppDelegate.m */; };
+		CF51769618F6BC5B007BBF9C /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = CF51769518F6BC5B007BBF9C /* Spaceship.png */; };
+		CF51769818F6BC5B007BBF9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF51769718F6BC5B007BBF9C /* Images.xcassets */; };
+		CF51769F18F6BC5B007BBF9C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF51769E18F6BC5B007BBF9C /* XCTest.framework */; };
+		CF5176A018F6BC5B007BBF9C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF51767918F6BC5A007BBF9C /* Cocoa.framework */; };
+		CF5176A818F6BC5B007BBF9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF5176A618F6BC5B007BBF9C /* InfoPlist.strings */; };
+		CF5176AA18F6BC5B007BBF9C /* WWClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5176A918F6BC5B007BBF9C /* WWClientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF5176A118F6BC5B007BBF9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF51766E18F6BC5A007BBF9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF51767518F6BC5A007BBF9C;
+			remoteInfo = WWClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF51767618F6BC5A007BBF9C /* WWClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF51767918F6BC5A007BBF9C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CF51767B18F6BC5A007BBF9C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		CF51767E18F6BC5A007BBF9C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CF51767F18F6BC5A007BBF9C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CF51768018F6BC5A007BBF9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF51768318F6BC5A007BBF9C /* WWClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WWClient-Info.plist"; sourceTree = "<group>"; };
+		CF51768518F6BC5A007BBF9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF51768718F6BC5A007BBF9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF51768918F6BC5A007BBF9C /* WWClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWClient-Prefix.pch"; sourceTree = "<group>"; };
+		CF51768B18F6BC5A007BBF9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CF51768D18F6BC5A007BBF9C /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		CF51768F18F6BC5A007BBF9C /* MKMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKMyScene.m; sourceTree = "<group>"; };
+		CF51769118F6BC5A007BBF9C /* MKMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKMyScene.h; sourceTree = "<group>"; };
+		CF51769218F6BC5A007BBF9C /* MKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKAppDelegate.m; sourceTree = "<group>"; };
+		CF51769418F6BC5A007BBF9C /* MKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKAppDelegate.h; sourceTree = "<group>"; };
+		CF51769518F6BC5B007BBF9C /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		CF51769718F6BC5B007BBF9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF51769D18F6BC5B007BBF9C /* WWClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF51769E18F6BC5B007BBF9C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CF5176A518F6BC5B007BBF9C /* WWClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WWClientTests-Info.plist"; sourceTree = "<group>"; };
+		CF5176A718F6BC5B007BBF9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF5176A918F6BC5B007BBF9C /* WWClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF51767318F6BC5A007BBF9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF51767C18F6BC5A007BBF9C /* SpriteKit.framework in Frameworks */,
+				CF51767A18F6BC5A007BBF9C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF51769A18F6BC5B007BBF9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5176A018F6BC5B007BBF9C /* Cocoa.framework in Frameworks */,
+				CF51769F18F6BC5B007BBF9C /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF51766D18F6BC5A007BBF9C = {
+			isa = PBXGroup;
+			children = (
+				CF51768118F6BC5A007BBF9C /* WWClient */,
+				CF5176A318F6BC5B007BBF9C /* WWClientTests */,
+				CF51767818F6BC5A007BBF9C /* Frameworks */,
+				CF51767718F6BC5A007BBF9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF51767718F6BC5A007BBF9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF51767618F6BC5A007BBF9C /* WWClient.app */,
+				CF51769D18F6BC5B007BBF9C /* WWClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF51767818F6BC5A007BBF9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF51767918F6BC5A007BBF9C /* Cocoa.framework */,
+				CF51767B18F6BC5A007BBF9C /* SpriteKit.framework */,
+				CF51769E18F6BC5B007BBF9C /* XCTest.framework */,
+				CF51767D18F6BC5A007BBF9C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF51767D18F6BC5A007BBF9C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF51767E18F6BC5A007BBF9C /* AppKit.framework */,
+				CF51767F18F6BC5A007BBF9C /* CoreData.framework */,
+				CF51768018F6BC5A007BBF9C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CF51768118F6BC5A007BBF9C /* WWClient */ = {
+			isa = PBXGroup;
+			children = (
+				CF51768D18F6BC5A007BBF9C /* MainMenu.xib */,
+				CF51768F18F6BC5A007BBF9C /* MKMyScene.m */,
+				CF51769118F6BC5A007BBF9C /* MKMyScene.h */,
+				CF51769218F6BC5A007BBF9C /* MKAppDelegate.m */,
+				CF51769418F6BC5A007BBF9C /* MKAppDelegate.h */,
+				CF51769518F6BC5B007BBF9C /* Spaceship.png */,
+				CF51769718F6BC5B007BBF9C /* Images.xcassets */,
+				CF51768218F6BC5A007BBF9C /* Supporting Files */,
+			);
+			path = WWClient;
+			sourceTree = "<group>";
+		};
+		CF51768218F6BC5A007BBF9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF51768318F6BC5A007BBF9C /* WWClient-Info.plist */,
+				CF51768418F6BC5A007BBF9C /* InfoPlist.strings */,
+				CF51768718F6BC5A007BBF9C /* main.m */,
+				CF51768918F6BC5A007BBF9C /* WWClient-Prefix.pch */,
+				CF51768A18F6BC5A007BBF9C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF5176A318F6BC5B007BBF9C /* WWClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF5176A918F6BC5B007BBF9C /* WWClientTests.m */,
+				CF5176A418F6BC5B007BBF9C /* Supporting Files */,
+			);
+			path = WWClientTests;
+			sourceTree = "<group>";
+		};
+		CF5176A418F6BC5B007BBF9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF5176A518F6BC5B007BBF9C /* WWClientTests-Info.plist */,
+				CF5176A618F6BC5B007BBF9C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF51767518F6BC5A007BBF9C /* WWClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF5176AD18F6BC5B007BBF9C /* Build configuration list for PBXNativeTarget "WWClient" */;
+			buildPhases = (
+				CF51767218F6BC5A007BBF9C /* Sources */,
+				CF51767318F6BC5A007BBF9C /* Frameworks */,
+				CF51767418F6BC5A007BBF9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WWClient;
+			productName = WWClient;
+			productReference = CF51767618F6BC5A007BBF9C /* WWClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF51769C18F6BC5B007BBF9C /* WWClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF5176B018F6BC5B007BBF9C /* Build configuration list for PBXNativeTarget "WWClientTests" */;
+			buildPhases = (
+				CF51769918F6BC5B007BBF9C /* Sources */,
+				CF51769A18F6BC5B007BBF9C /* Frameworks */,
+				CF51769B18F6BC5B007BBF9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF5176A218F6BC5B007BBF9C /* PBXTargetDependency */,
+			);
+			name = WWClientTests;
+			productName = WWClientTests;
+			productReference = CF51769D18F6BC5B007BBF9C /* WWClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF51766E18F6BC5A007BBF9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Andrey Rychkov";
+				TargetAttributes = {
+					CF51769C18F6BC5B007BBF9C = {
+						TestTargetID = CF51767518F6BC5A007BBF9C;
+					};
+				};
+			};
+			buildConfigurationList = CF51767118F6BC5A007BBF9C /* Build configuration list for PBXProject "WWClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF51766D18F6BC5A007BBF9C;
+			productRefGroup = CF51767718F6BC5A007BBF9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF51767518F6BC5A007BBF9C /* WWClient */,
+				CF51769C18F6BC5B007BBF9C /* WWClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF51767418F6BC5A007BBF9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF51769618F6BC5B007BBF9C /* Spaceship.png in Resources */,
+				CF51769818F6BC5B007BBF9C /* Images.xcassets in Resources */,
+				CF51768618F6BC5A007BBF9C /* InfoPlist.strings in Resources */,
+				CF51768C18F6BC5A007BBF9C /* Credits.rtf in Resources */,
+				CF51768E18F6BC5A007BBF9C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF51769B18F6BC5B007BBF9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5176A818F6BC5B007BBF9C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF51767218F6BC5A007BBF9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF51769318F6BC5A007BBF9C /* MKAppDelegate.m in Sources */,
+				CF51769018F6BC5A007BBF9C /* MKMyScene.m in Sources */,
+				CF51768818F6BC5A007BBF9C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF51769918F6BC5B007BBF9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5176AA18F6BC5B007BBF9C /* WWClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF5176A218F6BC5B007BBF9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF51767518F6BC5A007BBF9C /* WWClient */;
+			targetProxy = CF5176A118F6BC5B007BBF9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF51768418F6BC5A007BBF9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF51768518F6BC5A007BBF9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF51768A18F6BC5A007BBF9C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF51768B18F6BC5A007BBF9C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CF5176A618F6BC5B007BBF9C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF5176A718F6BC5B007BBF9C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF5176AB18F6BC5B007BBF9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CF5176AC18F6BC5B007BBF9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CF5176AE18F6BC5B007BBF9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWClient/WWClient-Prefix.pch";
+				INFOPLIST_FILE = "WWClient/WWClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF5176AF18F6BC5B007BBF9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWClient/WWClient-Prefix.pch";
+				INFOPLIST_FILE = "WWClient/WWClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CF5176B118F6BC5B007BBF9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WWClient.app/Contents/MacOS/WWClient";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWClient/WWClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WWClientTests/WWClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CF5176B218F6BC5B007BBF9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WWClient.app/Contents/MacOS/WWClient";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWClient/WWClient-Prefix.pch";
+				INFOPLIST_FILE = "WWClientTests/WWClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF51767118F6BC5A007BBF9C /* Build configuration list for PBXProject "WWClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5176AB18F6BC5B007BBF9C /* Debug */,
+				CF5176AC18F6BC5B007BBF9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF5176AD18F6BC5B007BBF9C /* Build configuration list for PBXNativeTarget "WWClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5176AE18F6BC5B007BBF9C /* Debug */,
+				CF5176AF18F6BC5B007BBF9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF5176B018F6BC5B007BBF9C /* Build configuration list for PBXNativeTarget "WWClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5176B118F6BC5B007BBF9C /* Debug */,
+				CF5176B218F6BC5B007BBF9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF51766E18F6BC5A007BBF9C /* Project object */;
+}

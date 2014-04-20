@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0AE6DAAA-8E50-4E39-82CF-F2C8AB1B2835</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WWClient</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>97C57025-ECBD-4157-A3FA-4E1BA2DDF1BC</key>
+		<string>https://github.com/Moonko/WWClient.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WWClient.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>97C57025-ECBD-4157-A3FA-4E1BA2DDF1BC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Moonko/WWClient.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>97C57025-ECBD-4157-A3FA-4E1BA2DDF1BC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97C57025-ECBD-4157-A3FA-4E1BA2DDF1BC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WWClient</string>
+		</dict>
+	</array>
+</dict>
+</plist>

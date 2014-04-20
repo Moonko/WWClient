@@ -13,7 +13,7 @@
         <customObject id="-3" userLabel="Application"/>
         <customObject id="Voe-Tx-rLC" customClass="MKAppDelegate">
             <connections>
-                <outlet property="skView" destination="Wjy-UC-qi6" id="jQd-N8-ub3"/>
+                <outlet property="skView" destination="hqv-oo-Rdr" id="KIZ-Fe-klw"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="NDT-MH-3nK"/>
             </connections>
         </customObject>
@@ -107,22 +107,16 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <rect key="contentRect" x="0.0" y="0.0" width="800" height="600"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1440"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <customView id="Wjy-UC-qi6" customClass="SKView">
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hqv-oo-Rdr" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
                 </subviews>
-                <constraints>
-                    <constraint firstAttribute="leading" secondItem="Wjy-UC-qi6" secondAttribute="leading" id="0fv-Jx-gFr"/>
-                    <constraint firstAttribute="trailing" secondItem="Wjy-UC-qi6" secondAttribute="trailing" id="BKF-Fx-aek"/>
-                    <constraint firstAttribute="top" secondItem="Wjy-UC-qi6" secondAttribute="top" id="FXR-1x-qCz"/>
-                    <constraint firstAttribute="bottom" secondItem="Wjy-UC-qi6" secondAttribute="bottom" id="NC6-PR-1uG"/>
-                </constraints>
             </view>
         </window>
     </objects>

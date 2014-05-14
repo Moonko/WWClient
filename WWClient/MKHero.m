@@ -14,7 +14,7 @@
 
 - (id)initWithTexture:(SKTexture *)texture
 {
-    if (self == [super initWithTexture:texture])
+    if (self = [super initWithTexture:texture])
     {
         self.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(self.size.width - 100,
                                                                              self.size.height)];

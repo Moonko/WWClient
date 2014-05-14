@@ -24,13 +24,13 @@
 
 #pragma mark - Initialization
 
-- (id)initWithSize:(CGSize)size
+- (id)initWithSize:(CGSize)size client:(MKClient *)client
 {
     if (self == [super initWithSize:size])
     {
         self.physicsWorld.contactDelegate = self;
         
-        _client = [[MKClient alloc] init];
+        _client = client;
         
         NSThread *clientThread = [[NSThread alloc] initWithTarget:_client
                                                          selector:@selector(start)
@@ -181,6 +181,7 @@
     _musicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicURL
                                                           error:nil];
     _musicPlayer.numberOfLoops = -1;
+    _musicPlayer.volume = 0.5;
 }
 
 - (void)playMusic
@@ -201,7 +202,7 @@
             MKSkill *skill = [[MKSkill alloc] initWithElements:_elements];
             
             [_hero castSkill:skill];
-            [_client sendCast:skill.type];
+            [_client sendMessage:(int)skill.type];
             
             for (MKElement *element in _elements)
             {
@@ -282,7 +283,7 @@
             if ([_hero isAttackedBy:skill.categoryBitMask])
             {
                 [[_heroHP objectAtIndex:0] setTexture:[SKTexture textureWithImageNamed:@"heart-damage.png"]];
-                [_client sendCast:100501];
+                [_client sendMessage:3];
                 [_client stop];
                 [self endGame:YES];
             }
@@ -295,7 +296,7 @@
             {
                 [[_enemyHP objectAtIndex:0] setTexture:
                  [SKTexture textureWithImageNamed:@"heart-damage.png"]];
-                [_client sendCast:100502];
+                [_client sendMessage:4];
                 [_client stop];
                 [self endGame:NO];
             }else

@@ -9,9 +9,13 @@
 #import <Cocoa/Cocoa.h>
 #import <SpriteKit/SpriteKit.h>
 
+@class MKClient;
+
 @interface MKAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet SKView *skView;
+@property (strong) IBOutlet SKView *skView;
+
+@property (nonatomic) MKClient *client;
 
 @end

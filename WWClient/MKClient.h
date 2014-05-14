@@ -18,9 +18,11 @@
 
 @property (nonatomic) int sock;
 
-@property (nonatomic) unsigned int skill;
+@property (nonatomic) int skill;
 
-- (void)sendCast:(unsigned int)skill;
+@property (nonatomic) BOOL canStartGame;
+
+- (void)sendMessage:(int)message;
 
 - (void)stop;
 

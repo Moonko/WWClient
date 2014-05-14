@@ -12,7 +12,6 @@
 		CF51768618F6BC5A007BBF9C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF51768418F6BC5A007BBF9C /* InfoPlist.strings */; };
 		CF51768818F6BC5A007BBF9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF51768718F6BC5A007BBF9C /* main.m */; };
 		CF51768C18F6BC5A007BBF9C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CF51768A18F6BC5A007BBF9C /* Credits.rtf */; };
-		CF51768E18F6BC5A007BBF9C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF51768D18F6BC5A007BBF9C /* MainMenu.xib */; };
 		CF51769318F6BC5A007BBF9C /* MKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF51769218F6BC5A007BBF9C /* MKAppDelegate.m */; };
 		CF51769818F6BC5B007BBF9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF51769718F6BC5B007BBF9C /* Images.xcassets */; };
 		CF51769F18F6BC5B007BBF9C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF51769E18F6BC5B007BBF9C /* XCTest.framework */; };
@@ -110,6 +109,10 @@
 		CF5177B418F6BF33007BBF9C /* MKEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5177B318F6BF33007BBF9C /* MKEnemy.m */; };
 		CF5177B718F6BFCB007BBF9C /* MKSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5177B618F6BFCB007BBF9C /* MKSkill.m */; };
 		CF5177BA18F6C008007BBF9C /* MKElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5177B918F6C008007BBF9C /* MKElement.m */; };
+		CF80B32F191CDADD004F22B2 /* MKAfterBattleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = CF80B32E191CDADD004F22B2 /* MKAfterBattleScene.m */; };
+		CF80B332191CEEA8004F22B2 /* msg-you-lose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF80B330191CEEA8004F22B2 /* msg-you-lose@2x.png */; };
+		CF80B333191CEEA8004F22B2 /* msg-you-won@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF80B331191CEEA8004F22B2 /* msg-you-won@2x.png */; };
+		CFB222AD1903D46200F7067C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB222AF1903D46200F7067C /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,7 +137,6 @@
 		CF51768718F6BC5A007BBF9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CF51768918F6BC5A007BBF9C /* WWClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWClient-Prefix.pch"; sourceTree = "<group>"; };
 		CF51768B18F6BC5A007BBF9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		CF51768D18F6BC5A007BBF9C /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		CF51769218F6BC5A007BBF9C /* MKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MKAppDelegate.m; sourceTree = "<group>"; };
 		CF51769418F6BC5A007BBF9C /* MKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKAppDelegate.h; sourceTree = "<group>"; };
 		CF51769718F6BC5B007BBF9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -242,6 +244,11 @@
 		CF5177B618F6BFCB007BBF9C /* MKSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSkill.m; sourceTree = "<group>"; };
 		CF5177B818F6C008007BBF9C /* MKElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKElement.h; sourceTree = "<group>"; };
 		CF5177B918F6C008007BBF9C /* MKElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKElement.m; sourceTree = "<group>"; };
+		CF80B32D191CDADD004F22B2 /* MKAfterBattleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MKAfterBattleScene.h; path = ../MKAfterBattleScene.h; sourceTree = "<group>"; };
+		CF80B32E191CDADD004F22B2 /* MKAfterBattleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MKAfterBattleScene.m; path = ../MKAfterBattleScene.m; sourceTree = "<group>"; };
+		CF80B330191CEEA8004F22B2 /* msg-you-lose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg-you-lose@2x.png"; sourceTree = "<group>"; };
+		CF80B331191CEEA8004F22B2 /* msg-you-won@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg-you-won@2x.png"; sourceTree = "<group>"; };
+		CFB222AE1903D46200F7067C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +325,8 @@
 				CF5176BA18F6BCCA007BBF9C /* MKGameScene.m */,
 				CF5176B318F6BC75007BBF9C /* MKMainMenuScene.h */,
 				CF5176B418F6BC75007BBF9C /* MKMainMenuScene.m */,
+				CF80B32D191CDADD004F22B2 /* MKAfterBattleScene.h */,
+				CF80B32E191CDADD004F22B2 /* MKAfterBattleScene.m */,
 				CF5176B618F6BC93007BBF9C /* MKClient.h */,
 				CF5176B718F6BC93007BBF9C /* MKClient.m */,
 				CF51770118F6BDBB007BBF9C /* Assets */,
@@ -332,7 +341,7 @@
 				CF51769718F6BC5B007BBF9C /* Images.xcassets */,
 				CF51769218F6BC5A007BBF9C /* MKAppDelegate.m */,
 				CF51769418F6BC5A007BBF9C /* MKAppDelegate.h */,
-				CF51768D18F6BC5A007BBF9C /* MainMenu.xib */,
+				CFB222AF1903D46200F7067C /* MainMenu.xib */,
 				CF51768318F6BC5A007BBF9C /* WWClient-Info.plist */,
 				CF51768418F6BC5A007BBF9C /* InfoPlist.strings */,
 				CF51768718F6BC5A007BBF9C /* main.m */,
@@ -363,6 +372,8 @@
 		CF51770118F6BDBB007BBF9C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				CF80B330191CEEA8004F22B2 /* msg-you-lose@2x.png */,
+				CF80B331191CEEA8004F22B2 /* msg-you-won@2x.png */,
 				CF51770F18F6BDEF007BBF9C /* Skills */,
 				CF51770818F6BDEF007BBF9C /* explosion.atlas */,
 				CF51770E18F6BDEF007BBF9C /* pentagram.atlas */,
@@ -568,6 +579,7 @@
 				CF51779B18F6BDEF007BBF9C /* icewall.mp3 in Resources */,
 				CF51769818F6BC5B007BBF9C /* Images.xcassets in Resources */,
 				CF5177A518F6BDEF007BBF9C /* wizard-1-dead.png in Resources */,
+				CF80B333191CEEA8004F22B2 /* msg-you-won@2x.png in Resources */,
 				CF5177A118F6BDEF007BBF9C /* YouLose2.mp3 in Resources */,
 				CF51779D18F6BDEF007BBF9C /* theme.mp3 in Resources */,
 				CF5177A818F6BDEF007BBF9C /* wizard-2-damage.png in Resources */,
@@ -580,6 +592,7 @@
 				CF51779F18F6BDEF007BBF9C /* vine.wav in Resources */,
 				CF51776318F6BDEF007BBF9C /* pentagram.atlas in Resources */,
 				CF51768618F6BC5A007BBF9C /* InfoPlist.strings in Resources */,
+				CF80B332191CEEA8004F22B2 /* msg-you-lose@2x.png in Resources */,
 				CF51776618F6BDEF007BBF9C /* earth-wall-left-1@2x.png in Resources */,
 				CF51776818F6BDEF007BBF9C /* earth-wall-left-3@2x.png in Resources */,
 				CF51776A18F6BDEF007BBF9C /* earth-wall-right-1@2x.png in Resources */,
@@ -616,7 +629,7 @@
 				CF51775918F6BDEF007BBF9C /* background2.png in Resources */,
 				CF51777418F6BDEF007BBF9C /* ice-wall-left-2@2x.png in Resources */,
 				CF51777018F6BDEF007BBF9C /* fireball-3@2x.png in Resources */,
-				CF51768E18F6BC5A007BBF9C /* MainMenu.xib in Resources */,
+				CFB222AD1903D46200F7067C /* MainMenu.xib in Resources */,
 				CF51776C18F6BDEF007BBF9C /* earth-wall-right-3@2x.png in Resources */,
 				CF51775B18F6BDEF007BBF9C /* background4.png in Resources */,
 				CF51778718F6BDEF007BBF9C /* vine-4@2x.png in Resources */,
@@ -670,6 +683,7 @@
 			files = (
 				CF5176B818F6BC93007BBF9C /* MKClient.m in Sources */,
 				CF51769318F6BC5A007BBF9C /* MKAppDelegate.m in Sources */,
+				CF80B32F191CDADD004F22B2 /* MKAfterBattleScene.m in Sources */,
 				CF5177B418F6BF33007BBF9C /* MKEnemy.m in Sources */,
 				CF5177B118F6BF2B007BBF9C /* MKHero.m in Sources */,
 				CF5176BB18F6BCCA007BBF9C /* MKGameScene.m in Sources */,
@@ -722,6 +736,14 @@
 				CF5176A718F6BC5B007BBF9C /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CFB222AF1903D46200F7067C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFB222AE1903D46200F7067C /* en */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

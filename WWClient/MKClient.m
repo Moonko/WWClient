@@ -24,7 +24,7 @@
     
     addr.sin_family = AF_INET;
     addr.sin_port = htons(3425);
-    addr.sin_addr.s_addr = inet_addr("169.254.24.9");
+    addr.sin_addr.s_addr = inet_addr("169.254.47.180");
     
     if (connect(_sock, (struct sockaddr *)&addr, sizeof(addr)) < 0)
     {
@@ -36,21 +36,21 @@
     
     recv(_sock, &background, sizeof(int), 0);
     
-    _background = [NSNumber numberWithInt:background];
-    
-    _skill = 0;
-    
     NSThread *enemyThread = [[NSThread alloc] initWithTarget:self
                                                     selector:@selector(listen)
                                                       object:nil];
     [enemyThread start];
+    
+    _background = [NSNumber numberWithInt:background];
+    
+    _skill = 0;
 }
 
 - (void)listen
 {
     while (1)
     {
-        recv(_sock, &_skill, sizeof(unsigned int), 0);
+        recv(_sock, &_skill, sizeof(int), 0);
     }
 }
 
@@ -59,9 +59,9 @@
     close(_sock);
 }
 
-- (void)sendCast:(unsigned int)skill
+- (void)sendMessage:(int)message
 {
-    send(_sock, &skill, sizeof(unsigned int), 0);
+    send(_sock, &message, sizeof(int), 0);
 }
 
 @end

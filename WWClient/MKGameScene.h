@@ -30,6 +30,8 @@
 @property (nonatomic) NSMutableArray *heroHP;
 @property (nonatomic) NSMutableArray *enemyHP;
 
+- (id)initWithSize:(CGSize)size client:(MKClient *)client;
+
 - (void)playMusic;
 
 @end

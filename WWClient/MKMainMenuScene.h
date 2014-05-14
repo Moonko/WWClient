@@ -8,6 +8,12 @@
 
 #import <SpriteKit/SpriteKit.h>
 
+@class MKClient;
+
 @interface MKMainMenuScene : SKScene <NSTextFieldDelegate>
+
+@property (nonatomic) MKClient *client;
+
+- (id)initWithSize:(CGSize)size client:(MKClient *)client;
 
 @end

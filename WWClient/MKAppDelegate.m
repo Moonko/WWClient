@@ -8,6 +8,7 @@
 
 #import "MKAppDelegate.h"
 #import "MKMainMenuScene.h"
+#import "MKClient.h"
 
 @implementation MKAppDelegate
 
@@ -15,19 +16,30 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    SKScene *scene = [MKMainMenuScene sceneWithSize:CGSizeMake(1024, 768)];
+    _client = [[MKClient alloc] init];
+    
+    SKScene *scene = [[MKMainMenuScene alloc] initWithSize:CGSizeMake(1024, 768)
+                                                    client:_client];
 
     scene.scaleMode = SKSceneScaleModeAspectFit;
 
     [self.skView presentScene:scene];
-
-    self.skView.showsFPS = YES;
-    self.skView.showsNodeCount = YES;
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
     return YES;
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification
+{
+    if ([[self.skView.scene className] isEqualTo:@"MKMainMenuScene"])
+    {
+        [_client sendMessage:-1];
+    } else
+    {
+        [_client sendMessage:-2];
+    }
 }
 
 @end

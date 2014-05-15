@@ -7,6 +7,7 @@
 //
 
 #import "MKGameScene.h"
+#import "MKAfterBattleScene.h"
 #import "MKEnemy.h"
 #import "MKHero.h"
 #import "MKElement.h"
@@ -112,6 +113,14 @@
     [_skillButton addChild:label];
     
     [_pentagram addChild:_skillButton];
+    
+    texture = [SKTexture textureWithImageNamed:@"pausebutton.png"];
+    _pauseButton = [SKSpriteNode spriteNodeWithTexture:texture size:CGSizeMake(100, 100)];
+    _pauseButton.anchorPoint = CGPointMake(0.5, 0.5);
+    _pauseButton.position = CGPointMake(CGRectGetMidX(self.frame), 10 + _pauseButton.size.width / 2);
+    _pauseButton.alpha = 0.5;
+    
+    [self addChild:_pauseButton];
 }
 
 - (void)setUpWizards
@@ -201,7 +210,6 @@
             
             MKSkill *skill = [[MKSkill alloc] initWithElements:_elements];
             
-            [_hero castSkill:skill];
             [_client sendMessage:(int)skill.type];
             
             for (MKElement *element in _elements)
@@ -209,6 +217,15 @@
                 element.isSelected = NO;
                 element.alpha = 0.25;
             }
+        }
+    } else if ([_pauseButton containsPoint:[theEvent locationInNode:self]])
+    {
+        if (!self.paused)
+        {
+            [_client sendMessage:-3];
+        } else
+        {
+            [_client sendMessage:-4];
         }
     }
 }
@@ -229,8 +246,70 @@
     
     if (_client.skill != 0)
     {
-        [_enemy castSkill:_client.skill];
+        int msg = _client.skill;
         _client.skill = 0;
+        if (msg % 10 == 0 || msg % 10 == 1 || msg % 10 == 2)
+        {
+            MKSkill *skill = [[MKSkill alloc] initWithType:msg];
+            [_hero castSkill:skill];
+            [_enemy castSkill:msg / 2];
+        } else
+        {
+            switch (msg)
+            {
+                case -2:
+                {
+                    [_client stop];
+                    [_client restart];
+                    MKAfterBattleScene *scene = [[MKAfterBattleScene alloc]
+                                                 initWithSize:CGSizeMake(1024, 768)
+                                                 win:YES
+                                                 client:_client];
+                    [self.view presentScene:scene];
+                    break;
+                }
+                case -3:
+                {
+                    SKTexture *texture = [SKTexture textureWithImageNamed:@"playbutton.png"];
+                    _pauseButton.texture = texture;
+                    _pauseButton.alpha = 1.0;
+                    self.paused = YES;
+                    break;
+                }
+                case -4:
+                {
+                    SKTexture *texture = [SKTexture textureWithImageNamed:@"pausebutton.png"];
+                    _pauseButton.alpha = 0.6;
+                    _pauseButton.texture = texture;
+                    self.paused = NO;
+                    break;
+                }
+            /*    case -5:
+                {
+                    [_client stop];
+                    [_client restart];
+                    MKAfterBattleScene *scene = [[MKAfterBattleScene alloc]
+                                                 initWithSize:CGSizeMake(1024, 768)
+                                                 win:NO
+                                                 client:_client];
+                    [self.view presentScene:scene];
+                }
+                case -6:
+                {
+                    [_client stop];
+                    [_client restart];
+                    MKAfterBattleScene *scene = [[MKAfterBattleScene alloc]
+                                                 initWithSize:CGSizeMake(1024, 768)
+                                                 win:YES
+                                                 client:_client];
+                    [self.view presentScene:scene];
+                } */
+                default:
+                {
+                    break;
+                }
+            }
+        }
     }
     
     if (_hero.mana < 60.0f)
@@ -283,9 +362,14 @@
             if ([_hero isAttackedBy:skill.categoryBitMask])
             {
                 [[_heroHP objectAtIndex:0] setTexture:[SKTexture textureWithImageNamed:@"heart-damage.png"]];
-                [_client sendMessage:3];
+                [_client sendMessage:-5];
                 [_client stop];
-                [self endGame:YES];
+                MKAfterBattleScene *scene = [[MKAfterBattleScene alloc]
+                                             initWithSize:CGSizeMake(1024, 768)
+                                             win:NO
+                                             client:_client];
+                [self.view presentScene:scene];
+
             }
             printf("hero %f\n", _hero.health);
             break;
@@ -296,9 +380,14 @@
             {
                 [[_enemyHP objectAtIndex:0] setTexture:
                  [SKTexture textureWithImageNamed:@"heart-damage.png"]];
-                [_client sendMessage:4];
+                [_client sendMessage:-6];
                 [_client stop];
-                [self endGame:NO];
+                MKAfterBattleScene *scene = [[MKAfterBattleScene alloc]
+                                             initWithSize:CGSizeMake(1024, 768)
+                                             win:YES
+                                             client:_client];
+                [self.view presentScene:scene];
+
             }else
             {
                 NSArray *textures = [NSArray arrayWithObjects:
@@ -338,11 +427,6 @@
 - (void)destroyWallWithName:(NSString *)name
 {
     [[self childNodeWithName:name] removeFromParent];
-}
-
-- (void)endGame:(BOOL)win
-{
-    exit(0);
 }
 
 @end

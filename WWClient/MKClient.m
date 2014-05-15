@@ -24,7 +24,7 @@
     
     addr.sin_family = AF_INET;
     addr.sin_port = htons(3425);
-    addr.sin_addr.s_addr = inet_addr("169.254.47.180");
+    addr.sin_addr.s_addr = inet_addr("127.0.0.1");
     
     if (connect(_sock, (struct sockaddr *)&addr, sizeof(addr)) < 0)
     {
@@ -62,6 +62,11 @@
 - (void)sendMessage:(int)message
 {
     send(_sock, &message, sizeof(int), 0);
+}
+
+- (void)restart
+{
+    [self start];
 }
 
 @end

@@ -108,7 +108,7 @@
         }
         //WaitForAnotherPlayer;
     }
-    [_game playMusic];
+    //[_game playMusic];
     [self.view presentScene:_game
                  transition:[SKTransition fadeWithDuration:2.0f]];
 }

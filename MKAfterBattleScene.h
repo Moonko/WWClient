@@ -8,6 +8,12 @@
 
 #import <SpriteKit/SpriteKit.h>
 
+@class MKClient;
+
 @interface MKAfterBattleScene : SKScene
+
+@property (nonatomic) MKClient *client;
+
+- (id)initWithSize:(CGSize)size win:(BOOL)yorno client:(MKClient *)client;
 
 @end

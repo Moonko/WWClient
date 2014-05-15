@@ -26,4 +26,6 @@
 
 - (void)stop;
 
+- (void)restart;
+
 @end

@@ -113,6 +113,8 @@
 		CF80B332191CEEA8004F22B2 /* msg-you-lose@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF80B330191CEEA8004F22B2 /* msg-you-lose@2x.png */; };
 		CF80B333191CEEA8004F22B2 /* msg-you-won@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF80B331191CEEA8004F22B2 /* msg-you-won@2x.png */; };
 		CFB222AD1903D46200F7067C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB222AF1903D46200F7067C /* MainMenu.xib */; };
+		CFC1371C1924845C0003300D /* pausebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC1371B1924845C0003300D /* pausebutton.png */; };
+		CFC1371E192484620003300D /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = CFC1371D192484620003300D /* playbutton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,6 +251,8 @@
 		CF80B330191CEEA8004F22B2 /* msg-you-lose@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg-you-lose@2x.png"; sourceTree = "<group>"; };
 		CF80B331191CEEA8004F22B2 /* msg-you-won@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "msg-you-won@2x.png"; sourceTree = "<group>"; };
 		CFB222AE1903D46200F7067C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CFC1371B1924845C0003300D /* pausebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebutton.png; sourceTree = "<group>"; };
+		CFC1371D192484620003300D /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +376,8 @@
 		CF51770118F6BDBB007BBF9C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				CFC1371D192484620003300D /* playbutton.png */,
+				CFC1371B1924845C0003300D /* pausebutton.png */,
 				CF80B330191CEEA8004F22B2 /* msg-you-lose@2x.png */,
 				CF80B331191CEEA8004F22B2 /* msg-you-won@2x.png */,
 				CF51770F18F6BDEF007BBF9C /* Skills */,
@@ -612,6 +618,7 @@
 				CF51777C18F6BDEF007BBF9C /* msg-war@2x.png in Resources */,
 				CF51778B18F6BDEF007BBF9C /* vine-8@2x.png in Resources */,
 				CF5177A218F6BDEF007BBF9C /* YouWon.mp3 in Resources */,
+				CFC1371C1924845C0003300D /* pausebutton.png in Resources */,
 				CF51778818F6BDEF007BBF9C /* vine-5@2x.png in Resources */,
 				CF51775E18F6BDEF007BBF9C /* heart-damage.png in Resources */,
 				CF5177A718F6BDEF007BBF9C /* wizard-2-attack.png in Resources */,
@@ -651,6 +658,7 @@
 				CF51776D18F6BDEF007BBF9C /* earth-wall-right-4@2x.png in Resources */,
 				CF51775C18F6BDEF007BBF9C /* button.png in Resources */,
 				CF51776518F6BDEF007BBF9C /* bubble-2@2x.png in Resources */,
+				CFC1371E192484620003300D /* playbutton.png in Resources */,
 				CF51779518F6BDEF007BBF9C /* captain-planet.mp3 in Resources */,
 				CF51775A18F6BDEF007BBF9C /* background3.png in Resources */,
 				CF51778C18F6BDEF007BBF9C /* vine-9@2x.png in Resources */,

@@ -43,46 +43,75 @@
 
 - (void)castSkill:(MKSkill *)skill;
 {
-    NSArray *textures = @[[SKTexture textureWithImageNamed:@"wizard-2-attack"],
-                          [SKTexture textureWithImageNamed:@"wizard-2-prepare"]];
-    
-    [self runAction:[SKAction animateWithTextures:textures
-                                     timePerFrame:1]];
-    
     switch (skill.type)
     {
         case fireball:
         {
+            NSArray *textures = @[[SKTexture textureWithImageNamed:@"wizard-2-attack"],
+                                  [SKTexture textureWithImageNamed:@"wizard-2-prepare"]];
+            
+            [self runAction:[SKAction animateWithTextures:textures
+                                             timePerFrame:1]];
             [self fireball];
             break;
         }
         case earthwall:
         {
+            NSArray *textures = @[[SKTexture textureWithImageNamed:@"wizard-2-attack"],
+                                  [SKTexture textureWithImageNamed:@"wizard-2-prepare"]];
+            
+            [self runAction:[SKAction animateWithTextures:textures
+                                             timePerFrame:1]];
             [self earthwall];
             break;
         }
         case bubble:
         {
+            NSArray *textures = @[[SKTexture textureWithImageNamed:@"wizard-2-attack"],
+                                  [SKTexture textureWithImageNamed:@"wizard-2-prepare"]];
+            
+            [self runAction:[SKAction animateWithTextures:textures
+                                             timePerFrame:1]];
             [self bubble];
             break;
         }
         case icewall:
         {
+            NSArray *textures = @[[SKTexture textureWithImageNamed:@"wizard-2-attack"],
+                                  [SKTexture textureWithImageNamed:@"wizard-2-prepare"]];
+            
+            [self runAction:[SKAction animateWithTextures:textures
+                                             timePerFrame:1]];
             [self icewall];
             break;
         }
         case ogre:
         {
+            NSArray *textures = @[[SKTexture textureWithImageNamed:@"wizard-2-attack"],
+                                  [SKTexture textureWithImageNamed:@"wizard-2-prepare"]];
+            
+            [self runAction:[SKAction animateWithTextures:textures
+                                             timePerFrame:1]];
             [self ogre];
             break;
         }
         case vine:
         {
+            NSArray *textures = @[[SKTexture textureWithImageNamed:@"wizard-2-attack"],
+                                  [SKTexture textureWithImageNamed:@"wizard-2-prepare"]];
+            
+            [self runAction:[SKAction animateWithTextures:textures
+                                             timePerFrame:1]];
             [self vine];
             break;
         }
         case windblast:
         {
+            NSArray *textures = @[[SKTexture textureWithImageNamed:@"wizard-2-attack"],
+                                  [SKTexture textureWithImageNamed:@"wizard-2-prepare"]];
+            
+            [self runAction:[SKAction animateWithTextures:textures
+                                             timePerFrame:1]];
             [self windblast];
             break;
         }

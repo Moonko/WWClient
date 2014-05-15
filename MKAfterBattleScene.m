@@ -8,6 +8,7 @@
 
 #import "MKAfterBattleScene.h"
 #import "MKMainMenuScene.h"
+#import "MKClient.h"
 
 @interface MKAfterBattleScene ()
 
@@ -20,10 +21,11 @@
 
 @implementation MKAfterBattleScene
 
-- (id)initWithSize:(CGSize)size Win:(BOOL)yOrNo
+- (id)initWithSize:(CGSize)size win:(BOOL)yOrNo client:(MKClient *)client
 {
     if (self = [super initWithSize:size])
     {
+        _client = client;
         self.backgroundColor = [SKColor whiteColor];
         if (yOrNo)
         {
@@ -45,7 +47,7 @@
         [self addChild:_startButton];
         
         _start = [SKLabelNode labelNodeWithFontNamed:@"Chulkduster"];
-        _start.text = @"Start";
+        _start.text = @"Menu";
         _start.position = _startButton.position;
         
         [self addChild:_start];
@@ -58,6 +60,8 @@
         _exit = [SKLabelNode labelNodeWithFontNamed:@"Chulkduster"];
         _exit.text = @"Exit";
         _exit.position = _exitButton.position;
+        
+        [self addChild:_exit];
     }
     
     return self;
@@ -67,7 +71,9 @@
 {
     if ([_startButton containsPoint:[theEvent locationInNode:self]])
     {
-        MKMainMenuScene *scene = [MKMainMenuScene sceneWithSize:CGSizeMake(1024, 768)];
+        [_client restart];
+        MKMainMenuScene *scene = [[MKMainMenuScene alloc] initWithSize:CGSizeMake(1024, 768)
+                                                                client:_client];
         scene.scaleMode = SKSceneScaleModeAspectFit;
         
         [self.view presentScene:scene];

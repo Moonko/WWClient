@@ -21,6 +21,7 @@
 
 @property (nonatomic) SKSpriteNode *background;
 @property (nonatomic) SKSpriteNode *skillButton;
+@property (nonatomic) SKSpriteNode *pauseButton;
 @property (nonatomic) SKNode *pentagram;
 
 @property (nonatomic) MKHero *hero;
